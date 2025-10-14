@@ -104,7 +104,44 @@ return {
       opts.options.opt.guifont = "FiraCode Nerd Font:h14"
       local maps = opts.mappings
       local astro = require "astrocore"
-      maps.n["<Leader>tc"] = { "<cmd>ToggleTermSendCurrentLine<cr>", desc = "Send Current Line" }
+      -- maps.n["<Leader>tc"] = { "<cmd>ToggleTermSendCurrentLine<cr>", desc = "Send Current Line" }
+      maps.n["<Leader>tc"] = {
+        function()
+          local line = vim.api.nvim_get_current_line()
+          local col = vim.fn.col "."
+          local indent = line:match "^%s+"
+          print("[DEBUG] line:", line)
+          print("[DEBUG] row:", row, "col:", col)
+          print("[DEBUG] indent:", vim.inspect(indent))
+          if not indent then
+            print "[DEBUG] Sending current line"
+            vim.cmd "ToggleTermSendCurrentLine"
+          else
+            -- Find block boundaries
+            local row = vim.fn.line "."
+            local start, finish = row, row
+            while start > 1 do
+              local l = vim.fn.getline(start - 1)
+              start = start - 1
+              if l:match "^%s*$" or not l:match "^%s" then break end
+            end
+            local last = vim.fn.line "$"
+            while finish < last do
+              local l = vim.fn.getline(finish + 1)
+              finish = finish + 1
+              print("[DEBUG] Downward scan line:", l)
+              if l:match "^%s*$" or not l:match "^%s" then break end
+            end
+            print("[DEBUG] Sending block:", start, finish)
+            -- Visually select the block before sending
+            vim.api.nvim_win_set_cursor(0, { start, 1 })
+            vim.cmd("normal! V" .. (finish - start) .. "j")
+            vim.cmd "ToggleTermSendVisualLines"
+            vim.api.nvim_win_set_cursor(0, { row, col - 1 })
+          end
+        end,
+        desc = "Send Current Line or Block",
+      }
       maps.v["<Leader>tc"] = { "<cmd>ToggleTermSendVisualLines<cr>", desc = "Send Visual Lines" }
       maps.i["<C-CR>"] = { "<cmd>ToggleTermSendCurrentLine<cr>", desc = "Send Current Line" }
       maps.i["<C-s>"] = { "<cmd>ToggleTermSendCurrentLine<cr>", desc = "Send Current Line" }
