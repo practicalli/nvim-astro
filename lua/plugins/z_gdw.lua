@@ -17,6 +17,22 @@ vim.api.nvim_set_keymap("v", "<D-v>", "<C-R>+", { noremap = true, silent = true 
 
 return {
   {
+    "AstroNvim/astrocore",
+    opts = {
+      rooter = {
+        enabled = true,
+        notify = true,
+        autochdir = true,
+      },
+      options = {
+        g = {
+          copilot_chat_prefix = "<Leader>a",
+          neovide_scale_factor = 0.8,
+        },
+      },
+    },
+  },
+  {
     "Olical/conjure",
     ft = { "clojure", "janet", "fennel", "racket", "hy", "scheme", "guile", "julia", "lua", "lisp", "python", "sql" },
   },
@@ -24,7 +40,7 @@ return {
   { import = "astrocommunity.git.gitlinker-nvim" },
   { import = "astrocommunity.terminal-integration.toggleterm-manager-nvim" },
   { import = "astrocommunity.completion.copilot-cmp" },
-  { import = "astrocommunity.completion.avante-nvim" },
+  -- { import = "astrocommunity.completion.avante-nvim" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.motion.leap-nvim" },
@@ -32,6 +48,8 @@ return {
   { import = "astrocommunity.editing-support.nvim-treesitter-context" },
   { import = "astrocommunity.code-runner.overseer-nvim" },
   { import = "astrocommunity.editing-support.copilotchat-nvim" },
+  { import = "astrocommunity.editing-support.codecompanion-nvim" },
+  { import = "astrocommunity.project.projectmgr-nvim" },
   {
     "CopilotC-Nvim/CopilotChat.nvim",
     opts = {
@@ -68,21 +86,6 @@ return {
     opts = {
       -- log level: TRACE DEBUG ERROR WARN INFO  OFF
       notifier = { level = vim.log.levels.INFO },
-    },
-  },
-  {
-    "AstroNvim/astrocore",
-    opts = {
-      rooter = {
-        enabled = true,
-        notify = true,
-        autochdir = true,
-      },
-      -- options = {
-      --   g = {
-      --     neovide_scale_factor = 0.8,
-      --   },
-      -- },
     },
   },
   {
