@@ -13,8 +13,9 @@ return {
   -- Astrocommunity - include one of the following
 
   -- Astrocommunity Git Repository
-  "AstroNvim/astrocommunity",
+  -- "AstroNvim/astrocommunity",  -- default release
 
+  { "AstroNvim/astrocommunity", branch = "v6" }, -- AstroNvim v6
   -- Local plugin development - Astrocommunity fork in ~/project/astrocommunity
   -- { "AstroNvim/astrocommunity", dev = true },
 
