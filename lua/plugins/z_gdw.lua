@@ -44,7 +44,6 @@ return {
   { import = "astrocommunity.motion.marks-nvim" },
   { import = "astrocommunity.editing-support.nvim-treesitter-context" },
   { import = "astrocommunity.code-runner.overseer-nvim" },
-  { import = "astrocommunity.editing-support.codecompanion-nvim" },
   { import = "astrocommunity.project.projectmgr-nvim" },
   { import = "astrocommunity.ai.opencode-nvim" },
   {
