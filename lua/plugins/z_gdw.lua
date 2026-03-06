@@ -178,6 +178,15 @@ return {
         maps.n["<Leader>g-"] = { gh_dash.callback, desc = gh_dash.desc }
         -- maps.n["<Leader>tl"] = { gh_dash.callback, desc = gh_dash.desc }
       end
+
+      -- copy current file path
+      maps.n["yP"] = {
+        function()
+          vim.fn.setreg("+", vim.fn.expand "%:p")
+          print("Copied full path: " .. vim.fn.expand "%:p")
+        end,
+        desc = "Copy full path of current buffer",
+      }
     end,
   },
   {
