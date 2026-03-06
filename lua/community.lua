@@ -95,7 +95,7 @@ return {
   { import = "astrocommunity.git.neogit" },
 
   -- GitHub Pull Requests and Issues
-  { import = "astrocommunity.git.octo-nvim" },
+  -- { import = "astrocommunity.git.octo-nvim" },
   -- ----------------------------------------------
 
   -- ----------------------------------------------
