@@ -127,14 +127,16 @@ return {
             while start > 1 do
               local l = vim.fn.getline(start - 1)
               start = start - 1
-              if l:match "^%s*$" or not l:match "^%s" then break end
+              -- if l:match "^%s*$" or not l:match "^%s" then break end
+              if l:match "^%S" then break end
             end
             local last = vim.fn.line "$"
             while finish < last do
               local l = vim.fn.getline(finish + 1)
               finish = finish + 1
               print("[DEBUG] Downward scan line:", l)
-              if l:match "^%s*$" or not l:match "^%s" then break end
+              -- if l:match "^%s*$" or not l:match "^%s" then break end
+              if l:match "^%S" then break end
             end
             print("[DEBUG] Sending block:", start, finish)
             -- Visually select the block before sending
