@@ -50,6 +50,7 @@ return {
   { import = "astrocommunity.editing-support.copilotchat-nvim" },
   { import = "astrocommunity.editing-support.codecompanion-nvim" },
   { import = "astrocommunity.project.projectmgr-nvim" },
+  { import = "astrocommunity.ai.opencode-nvim" },
   {
     "CopilotC-Nvim/CopilotChat.nvim",
     opts = {
