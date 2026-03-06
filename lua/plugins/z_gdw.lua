@@ -26,7 +26,6 @@ return {
       },
       options = {
         g = {
-          copilot_chat_prefix = "<Leader>a",
           neovide_scale_factor = 0.8,
         },
       },
@@ -39,29 +38,15 @@ return {
   { import = "astrocommunity.recipes.neovide" },
   { import = "astrocommunity.git.gitlinker-nvim" },
   { import = "astrocommunity.terminal-integration.toggleterm-manager-nvim" },
-  { import = "astrocommunity.completion.copilot-cmp" },
-  -- { import = "astrocommunity.completion.avante-nvim" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.motion.leap-nvim" },
   { import = "astrocommunity.motion.marks-nvim" },
   { import = "astrocommunity.editing-support.nvim-treesitter-context" },
   { import = "astrocommunity.code-runner.overseer-nvim" },
-  { import = "astrocommunity.editing-support.copilotchat-nvim" },
   { import = "astrocommunity.editing-support.codecompanion-nvim" },
   { import = "astrocommunity.project.projectmgr-nvim" },
   { import = "astrocommunity.ai.opencode-nvim" },
-  {
-    "CopilotC-Nvim/CopilotChat.nvim",
-    opts = {
-      mappings = {
-        reset = {
-          normal = "",
-          insert = "",
-        }, -- I'm accidentally clearing my chat log.
-      },
-    },
-  },
   {
     "sindrets/winshift.nvim",
     specs = {
@@ -72,13 +57,6 @@ return {
           maps.n["<Leader>w"] = { "<cmd>WinShift<cr>", desc = "WinShift" }
         end,
       },
-    },
-  },
-  {
-    "yetone/avante.nvim",
-    opts = {
-      provider = "copilot",
-      -- add any opts here
     },
   },
   -- Snacks Customisation
