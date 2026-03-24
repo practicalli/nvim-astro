@@ -140,6 +140,41 @@ Thank you.
     ],
     "description": "post-header"
   },
+  "post 100daysofcode": {
+    "prefix": "post-100daysofcode",
+    "body": [
+      "---
+title: ${1:meaningful title}
+date:
+  created: 2018-${2}-${3}
+  updated: 2018-${2}-${3}
+authors:
+  - practicalli
+categories:
+  - 100daysofcode
+tags:
+  - clojure
+draft: false
+---
+
+$0
+
+<!-- more -->
+
+
+---
+Thank you.
+
+[:globe_with_meridians: Practical.li Website](https://practical.li){target=_blank .md-button}
+
+[:fontawesome-brands-github: Practical.li GitHub Org](https://github.com/practicalli){target=_blank .md-button}
+[:fontawesome-brands-github: practicalli-johnny profile](https://github.com/practicalli-johnny){target=_blank .md-button}
+
+[:fontawesome-brands-mastodon: @practicalli@clj.social](https://clj.social/@practicalli){target=_blank .md-button}
+"
+    ],
+    "description": "post-100daysofcode"
+  },
   "mkdocs key form": {
     "prefix": "mkdocs-key-form",
     "body": [
