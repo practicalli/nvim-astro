@@ -46,6 +46,8 @@ return {
   { import = "astrocommunity.code-runner.overseer-nvim" },
   { import = "astrocommunity.project.projectmgr-nvim" },
   { import = "astrocommunity.ai.opencode-nvim" },
+  { import = "astrocommunity.git.neogit" },
+  { import = "astrocommunity.git.fugit2-nvim" },
   {
     "sindrets/winshift.nvim",
     specs = {
