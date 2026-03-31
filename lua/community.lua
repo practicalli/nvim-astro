@@ -61,6 +61,7 @@ return {
   -- Packs (code-runner, treesitter, lsp & lint/format support)
 
   { import = "astrocommunity.pack.clojure" },
+  { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.lua" },
   -- ----------------------------------------------
