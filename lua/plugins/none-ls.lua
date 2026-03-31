@@ -1,8 +1,12 @@
 -- ---------------------------------------------------------
--- Configure format & lint tools
+-- Customize None-ls sources for format & lint tools
 --
 -- Ensure tools are installed via Mason
 -- Pass configuration files to each tool
+
+-- Supported formatters and linters
+-- https://github.com/nvimtools/none-ls.nvim/tree/main/lua/null-ls/builtins/formatting
+-- https://github.com/nvimtools/none-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
 -- ---------------------------------------------------------
 
 -- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
@@ -16,14 +20,25 @@ return {
   -- use mason-lspconfig to configure LSP installations
   -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
   {
-    "jay-babu/mason-null-ls.nvim",
-    -- overrides `require("mason-null-ls").setup(...)`
+    "nvimtools/none-ls.nvim",
     opts = function(_, opts)
       -- add more things to the ensure_installed table protecting against community packs modifying it
-      opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
-        "markdownlint",
-        -- add more arguments for adding more null-ls sources
+
+      local null_ls = require "null-ls"
+
+      -- Only insert new sources, do not replace the existing ones
+      -- (If you wish to replace, use `opts.sources = {}` instead of the `list_insert_unique` function)
+      opts.sources = require("astrocore").list_insert_unique(opts.sources, {
+        -- Set a formatter
+        -- null_ls.builtins.formatting.stylua,
+        -- null_ls.builtins.formatting.prettier,
+        null_ls.builtins.diagnostics.markdownlint, -- from none-ls docs
       })
+
+      -- opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
+      --   "markdownlint",
+      --   -- add more arguments for adding more null-ls sources
+      -- })
       opts.handlers = {
         markdownlint = function(source_name, methods)
           local null_ls = require "null-ls"
