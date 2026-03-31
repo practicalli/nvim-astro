@@ -90,6 +90,8 @@ return {
   },
   -- ------------------------------------------
 
+  { "nvim-neo-tree/neo-tree.nvim", enabled = false },
+
   -- ------------------------------------------
   -- Editor tools
 
@@ -205,7 +207,8 @@ return {
           ["[b"] = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
 
           -- snacks file explorer
-          ["<Leader>E"] = { "<cmd>lua Snacks.picker.explorer()<cr>", desc = "Snacks Explorer" },
+          ["<Leader>e"] = { "<cmd>lua Snacks.picker.explorer()<cr>", desc = "Snacks Explorer" },
+
 
           -- Save prompting for file name
           ["<Leader>W"] = { ":write ", desc = "Save as file" },
