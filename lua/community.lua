@@ -60,6 +60,7 @@ return {
   -- ----------------------------------------------
   -- Packs (code-runner, treesitter, lsp & lint/format support)
 
+  { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.clojure" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.json" },
