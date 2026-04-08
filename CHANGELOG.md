@@ -1,5 +1,17 @@
 # Unreleased
 
+# 2026-04-08
+
+- astronvim: switch to released v6
+- practicalli: remove neo-tree, replace with snacks.picker.explorer
+- community: add markdown pack including marksman tool
+- community: add bash pack to support zsh and bash scripts
+- readme: update repo name and overview
+
+# 2026-03-31
+
+Final AstroNvim v5 based version
+
 ## Added
 - none-ls: use configuration file for markdown lint cli
 - clojure: add conjure debug option as comment example

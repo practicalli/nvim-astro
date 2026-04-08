@@ -1,29 +1,23 @@
-# Practicalli Astro5 Neovim Configuration
+# Practicalli Nvim-Astro Neovim Configuration
 
 ```none
-██████╗ ██████╗  █████╗  ██████╗████████╗██╗ ██████╗ █████╗ ██╗     ██╗     ██╗
-██╔══██╗██╔══██╗██╔══██╗██╔════╝╚══██╔══╝██║██╔════╝██╔══██╗██║     ██║     ██║
-██████╔╝██████╔╝███████║██║        ██║   ██║██║     ███████║██║     ██║     ██║
-██╔═══╝ ██╔══██╗██╔══██║██║        ██║   ██║██║     ██╔══██║██║     ██║     ██║
-██║     ██║  ██║██║  ██║╚██████╗   ██║   ██║╚██████╗██║  ██║███████╗███████╗██║
-╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝   ╚═╝   ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝
+███╗   ██╗██╗   ██╗██╗███╗   ███╗       █████╗ ███████╗████████╗██████╗  ██████╗
+████╗  ██║██║   ██║██║████╗ ████║      ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔═══██╗
+██╔██╗ ██║██║   ██║██║██╔████╔██║█████╗███████║███████╗   ██║   ██████╔╝██║   ██║
+██║╚██╗██║╚██╗ ██╔╝██║██║╚██╔╝██║╚════╝██╔══██║╚════██║   ██║   ██╔══██╗██║   ██║
+██║ ╚████║ ╚████╔╝ ██║██║ ╚═╝ ██║      ██║  ██║███████║   ██║   ██║  ██║╚██████╔╝
+╚═╝  ╚═══╝  ╚═══╝  ╚═╝╚═╝     ╚═╝      ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝
 
- █████╗ ███████╗████████╗██████╗  ██████╗     ███████╗
-██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔═══██╗    ██╔════╝
-███████║███████╗   ██║   ██████╔╝██║   ██║    ███████╗
-██╔══██║╚════██║   ██║   ██╔══██╗██║   ██║    ╚════██║
-██║  ██║███████║   ██║   ██║  ██║╚██████╔╝    ███████║
-╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝     ╚══════╝
 ```
 
-> NOTE: Ascii Art Generator: https://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow&t=Astro%205
+> NOTE: Ascii Art Generator: https://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow&t=Nvim-Astro&x=none
 
 
 ## Overview
 
-A lazy loading rich feature configuration for [Neovim 0.11.x](https://neovim.org/), providing common development tooling, including an effective Clojure REPL workflow.
+A lazy loading rich feature configuration for [Neovim 0.12.x](https://neovim.org/), providing common development tooling, including an effective Clojure REPL workflow.
 
-This configuration is built upon [AstroNvim version 5](https://github.com/AstroNvim/AstroNvim), extending the AstroNvim v5 template with valuable plugins, options and key mappings.
+This configuration is built upon [AstroNvim version 6](https://github.com/AstroNvim/AstroNvim), extending the AstroNvim v6 template with valuable plugins, options and key mappings.
 
 [Practicalli Neovim](https://practical.li/neovim/) describes the Clojure REPL workflow, rich Git and GitHub clients and easy management of plugins and tools using this configuration.
 
@@ -36,10 +30,10 @@ Recommended tools:
 - [Neovim and supporting tools](https://practical.li/neovim/install/neovim/)
 - [Clojure CLI](https://practical.li/clojure/install/)
 
-Clone the Practicalli Astro5 repository (create a fork if customisation desired)
+Clone the Practicalli Nvim-Astro repository (create a fork if customisation desired)
 
 ```shell
-git clone git@github.com:practicalli/nvim-astro5 $HOME/.config/nvim
+git clone git@github.com:practicalli/nvim-astro $HOME/.config/nvim
 ```
 
 Run `nvim` command and wait for all plugins  to automatically install and Treesitter language parsers to compile.
@@ -50,16 +44,16 @@ nvim
 
 ### Multiple Neovim configs
 
-Clone to `$HOME/.config/nvim-astron5` and use the `NVIM_APPNAME=astronvim nvim` command to start Neovim with AstroNvim configuration
+Clone to `$HOME/.config/nvim-astro` and use the `NVIM_APPNAME=astronvim nvim` command to start Neovim with AstroNvim configuration
 
 ```shell
-git clone git@github.com:practicalli/nvim-astro5 $HOME/.config/nvim-astro5
+git clone git@github.com:practicalli/nvim-astro $HOME/.config/nvim-astro
 ```
 
 Create a shell alias to run the new configuration, e.g. in `.bashrc` or `.zshrc` (or a `~/.config/shell-aliases` file that each shell rc file sources)
 
 ```config
-alias astro5="NVIM_APPNAME=nvim-astro5 nvim"
+alias astro="NVIM_APPNAME=nvim-astro nvim"
 ```
 
 Load the alias into the current shell from the rc file or shell-aliases (or open a new shell), e.g.
@@ -68,28 +62,30 @@ Load the alias into the current shell from the rc file or shell-aliases (or open
 source ~/.config/shell-aliases
 ```
 
-Run `astro5` and allow neovim plugins to automatically install and Treesitter language parsers to compile.
+Run `astro` and allow neovim plugins to automatically install and Treesitter language parsers to compile.
 
 ```shell
-astro5
+astro
 ```
 
 
 ## Configuration overview
 
-The configuration is based on the AstroNvim v5 template config.  Changes to existing file have been kept to a minimum, except for `lua/community.lua` which has additional plugins from the AstroNvim Community repository.
+The configuration is based on the AstroNvim v6 template config.  Changes to existing file have been kept to a minimum, except for `lua/community.lua` which has additional plugins from the AstroNvim Community repository.
 
 `lua/plugins/practicalli.lua` contains Practicalli specific configuration (plugins, preferences & key maps).  This also provides an example of how to modify and extend the AstroNvim configuration yourself.
 
-Set environment variable `PRACTICALLI_ASTRO` to false to skip the Practicalli config without requiring a code change.
 
-Create your own `lua/plugins/user-yourname.lua` file to:
+To skip the Practicalli config without changing the configuration, set an environment variable called `PRACTICALLI_ASTRO` to false.
+
+
+Create a `lua/plugins/user-yourname.lua` file to:
 
 - override default plugin configuration
 - add new plugins (or create a new file for a plugin to make them easier to be optional)
+- customise key bindings
 
-
-[Practicalli Astro5 config design](https://practical.li/neovim/reference/astro5-configuration/) provides a complete breakdown of this configuration.
+[Practicalli Astro config design](https://practical.li/neovim/reference/nvim-astro-configuration/) provides a complete breakdown of this configuration.
 
 > NOTE: Lua files in the `lua/plugins` directory are loaded in alphabetical order so plugin overrides should be the last file to load, e.g `lua/plugins/user-*`
 
@@ -102,7 +98,7 @@ Mason is used to automatically install LSP servers, format & lint tools.  [Mason
 
 Mason can be configured to use a locally installed Clojure LSP server (using the [instructions for your operating system](https://clojure-lsp.io/installation/)).
 
-[lua/plugins/termux.lua](https://github.com/practicalli/nvim-astro5/blob/main/lua/plugins/termux.lua) shows how to configure mason to use a local Clojure and Lua LSP server (preventing Mason from automatically installing these tools)
+[lua/plugins/termux.lua](https://github.com/practicalli/nvim-astro/blob/main/lua/plugins/termux.lua) shows how to configure mason to use a local Clojure and Lua LSP server (preventing Mason from automatically installing these tools)
 
 
 ## Sponsor Practicalli
