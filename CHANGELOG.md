@@ -3,6 +3,18 @@
 ## Added
 
 - dev: make tasks for practicalli projects
+- dev: update GitHub actions via `make dependencies-update`
+
+| :file                                          | :name                   | :current | :latest |
+|------------------------------------------------|-------------------------|----------|---------|
+| .github/workflows/changelog-check.yaml         | actions/checkout        | v4       | v6.0.2  |
+| .github/workflows/megalinter.yaml              | actions/checkout        | v4       | v6.0.2  |
+|                                                | actions/upload-artifact | v4       | v7.0.1  |
+|                                                | oxsecurity/megalinter   | v8       | v9.4.0  |
+| .github/workflows/scheduled-stale-check.yaml   | actions/stale           | v9       | v10.2.0 |
+| .github/workflows/scheduled-version-check.yaml | actions/checkout        | v4       | v6.0.2  |
+
+
 # 2026-04-08
 
 - astronvim: switch to released v6
