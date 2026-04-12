@@ -1,5 +1,8 @@
 # Unreleased
 
+## Added
+
+- dev: make tasks for practicalli projects
 # 2026-04-08
 
 - astronvim: switch to released v6
