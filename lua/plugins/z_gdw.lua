@@ -136,7 +136,7 @@ return {
       -- Original is here: https://github.com/AstroNvim/AstroNvim/blob/e3434ed8ba30af34b36d270b0197b91e444b9363/lua/astronvim/plugins/telescope.lua#L71-L77
       if vim.fn.executable "rg" == 1 then
         maps.n["<Leader>fw"] = {
-          function() require("snacks").picker.grep() { hidden = true, ignored = false } end,
+          function() require("snacks").picker.grep { hidden = true, ignored = false } end,
           desc = "Find words",
         }
       end
