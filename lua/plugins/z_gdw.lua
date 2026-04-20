@@ -42,7 +42,8 @@ return {
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.motion.leap-nvim" },
   { import = "astrocommunity.motion.marks-nvim" },
-  { import = "astrocommunity.editing-support.nvim-treesitter-context" },
+  -- causing issues?
+  -- { import = "astrocommunity.editing-support.nvim-treesitter-context" },
   { import = "astrocommunity.code-runner.overseer-nvim" },
   { import = "astrocommunity.project.projectmgr-nvim" },
   { import = "astrocommunity.ai.opencode-nvim" },
