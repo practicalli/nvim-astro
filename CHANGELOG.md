@@ -2,6 +2,7 @@
 
 ## Added
 
+- practicalli: add conventional commits plugin for commit messages
 - dev: make tasks for practicalli projects
 - dev: update GitHub actions via `make dependencies-update`
 

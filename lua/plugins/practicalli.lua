@@ -139,6 +139,12 @@ return {
       mappings = { "clojure" },
     },
   },
+  -- Conventional Commits messages
+  {
+    "zerbiniandrea/conventional-commits.nvim",
+    cmd = "ConventionalCommit",
+    opts = {},
+  },
   -- ------------------------------------------
 
   -- ------------------------------------------
