@@ -1,25 +1,32 @@
-# ----------------------------------------
+# -------------------------------------- #
 # Base URL or website root directory to check relative URLs.
-base = "https://practical.li/clojure/"
+base_url = "https://practical.li/engineering-playbook"
 
 # Only test links with the given schemes (e.g. https).
 # Omit to check links with any other scheme.
 # At the moment, we support http, https, file, and mailto.
 scheme = ["https"]
+# -------------------------------------- #
 
-# ----------------------------------------
-# Exclusions
+# -- Cache -------------------------------
+
+# Enable link caching. This can be helpful to avoid checking the same links on
+# multiple runs.
+cache = true
+# -------------------------------------- #
+
+# -- Exclusions ------------------------ #
 
 # Exclude URLs and mail addresses from checking (supports regex).
-exclude = ['^https://www\.linkedin\.com',
+exclude = ['^https://(www\.)?linkedin\.com',
            '^https://www\.parkrun\.org\.uk',
            '^https://github\.com\/search*',
            '^https://packages\.debian\.org',
            '^https://practicalli\.grafana\.net',
-           '^https://127.0.0.0']
+           '^https://web\.archive\.org/web/']
 
 # Exclude these filesystem paths from getting checked.
-exclude_path = ["mkdocs.yml", "overrides", "includes", ".github", ".git"]
+exclude_path = ["mkdocs.yml", "assets", "overrides", "includes", ".github", ".git"]
 
 # Exclude all private IPs from checking.
 # Equivalent to setting `exclude_private`, `exclude_link_local`, and
@@ -28,4 +35,4 @@ exclude_all_private = true
 
 # Check mail addresses
 include_mail = false
-# ----------------------------------------
+# -------------------------------------- #
