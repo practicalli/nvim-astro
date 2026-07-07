@@ -26,7 +26,7 @@ This configuration is built upon [AstroNvim version 6](https://github.com/AstroN
 
 Recommended tools:
 
-- [Kitty Terminal](https://practical.li/engineering-playbook/command-line/kitty-terminal/)
+- [Kitty Terminal](https://practical.li/engineering-playbook/os/command-line/kitty-terminal/)
 - [Neovim and supporting tools](https://practical.li/neovim/install/neovim/)
 - [Clojure CLI](https://practical.li/clojure/install/)
 
@@ -85,7 +85,7 @@ Create a `lua/plugins/user-yourname.lua` file to:
 - add new plugins (or create a new file for a plugin to make them easier to be optional)
 - customise key bindings
 
-[Practicalli Astro config design](https://practical.li/neovim/reference/nvim-astro-configuration/) provides a complete breakdown of this configuration.
+[Practicalli Astro config design](https://practical.li/neovim/install/customise-configuration/) provides a complete breakdown of this configuration.
 
 > NOTE: Lua files in the `lua/plugins` directory are loaded in alphabetical order so plugin overrides should be the last file to load, e.g `lua/plugins/user-*`
 
