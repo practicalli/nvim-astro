@@ -50,9 +50,11 @@ MARKDOWN_REMARK_LINT_DISABLE_ERRORS: true
 
 REPOSITORY_DEVSKIM_CONFIG_FILE:  ".github/config/devskim.json"
 REPOSITORY_GITLEAKS_CONFIG_FILE: ".github/config/gitleaks.toml"
+REPOSITORY_KINGFISHER_CONFIG_FILE: ".github/config/kingfisher.yaml"
 REPOSITORY_TRUFFLEHOG_DISABLE_ERRORS: true # Errors only as warnings
 REPOSITORY_KICS_DISABLE_ERRORS: true # Errors only as warnings
 REPOSITORY_DEVSKIM_DISABLE_ERRORS: true # Errors only as warnings
+REPOSITORY_KINGFISHER_DISABLE_ERRORS: true # Errors only as warnings
 
 # SPELL_CSPELL_DISABLE_ERRORS: true
 SPELL_MISSPELL_DISABLE_ERRORS: true

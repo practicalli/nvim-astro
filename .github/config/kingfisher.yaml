@@ -1,0 +1,5 @@
+filters:
+  exclude:                      # list, additive                 (--exclude)
+    - .github/
+    - .git/
+    - "**/node_modules/**"
