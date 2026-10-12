@@ -227,6 +227,7 @@ return {
 
           -- Neogit Status float
           ["<Leader>gf"] = { "<cmd>Neogit kind=floating<cr>", desc = "Git Status (floating)" },
+          ["<Leader>gnp"] = { "<cmd>Neogit cwd=%:p:h<cr>", desc = "Git Status (file repo)" },
 
           -- Toggle between src and test (Clojure pack | other-nvim)
           ["<localLeader>ts"] = { "<cmd>Other<cr>", desc = "Switch src & test" },

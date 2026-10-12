@@ -7,7 +7,8 @@
 - build(make): 🔧 tasks for practicalli projects
 - feat(practicalli): ✨ conventional commits plugin
 - feat(practicalli): 🔧 key mapping for conventional commits plugin
--  feat(snippet): update mastodon social link in header snippets
+- feat(snippet): update mastodon social link in header snippets
+- feat(practicalli): 🔧 key mapping git status for current file
 
 ## Updated
 
