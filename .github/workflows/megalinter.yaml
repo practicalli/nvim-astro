@@ -47,7 +47,7 @@ jobs:
 
       # MegaLinter Configuration
       - name: MegaLinter Run
-        uses: oxsecurity/megalinter@v9
+        uses: practicalli/megalinter-custom-flavor-zensical@main
         id: ml
         env:
 

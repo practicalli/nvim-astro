@@ -6,6 +6,10 @@
 - feat(snippet): update mastodon social link in header snippets
 - build(make): 🔧 `deps-update` & `deps-upgrade` tasks
 
+## Changed
+
+- ci(github): 👷 use practicalli zensical custom megalinter flavor
+
 
 # 2026-08-05
 
