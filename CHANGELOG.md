@@ -4,6 +4,7 @@
 
 - feat(practicalli): 🔧 key mapping git status for current file
 - feat(snippet): update mastodon social link in header snippets
+- build(make): 🔧 `deps-update` & `deps-upgrade` tasks
 
 
 # 2026-08-05
