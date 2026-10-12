@@ -7,6 +7,10 @@
 - build(make): 🔧 tasks for practicalli projects
 - feat(practicalli): ✨ conventional commits plugin
 - feat(practicalli): 🔧 key mapping for conventional commits plugin
+-  feat(snippet): update mastodon social link in header snippets
+
+## Updated
+
 - ci(github): 👷 latest versions of actions via `make dependencies-update`
 
 | :file                                          | :name                   | :current | :latest |
