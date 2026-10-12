@@ -1,5 +1,11 @@
 # Unreleased
 
+## Added
+
+- feat(practicalli): 🔧 key mapping git status for current file
+- feat(snippet): update mastodon social link in header snippets
+
+
 # 2026-08-05
 
 ## Added
@@ -7,11 +13,6 @@
 - build(make): 🔧 tasks for practicalli projects
 - feat(practicalli): ✨ conventional commits plugin
 - feat(practicalli): 🔧 key mapping for conventional commits plugin
-- feat(snippet): update mastodon social link in header snippets
-- feat(practicalli): 🔧 key mapping git status for current file
-
-## Updated
-
 - ci(github): 👷 latest versions of actions via `make dependencies-update`
 
 | :file                                          | :name                   | :current | :latest |
