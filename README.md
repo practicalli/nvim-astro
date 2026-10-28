@@ -10,12 +10,16 @@
 
 ```
 
-> NOTE: Ascii Art Generator: https://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow&t=Nvim-Astro&x=none
+> NOTE: [Ascii Art Generator](https://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow&t=Nvim-Astro&x=none)
 
 
 ## Overview
 
-A lazy loading rich feature configuration for [Neovim 0.12.x](https://neovim.org/), providing common development tooling, including an effective Clojure REPL workflow.
+A lazy loading feature rich configuration for [Neovim 0.12.x](https://neovim.org/). The config provides common development tooling, including an effective Clojure REPL workflow.
+
+- Neogit Git client
+- Grug-far search and replace
+
 
 This configuration is built upon [AstroNvim version 6](https://github.com/AstroNvim/AstroNvim), extending the AstroNvim v6 template with valuable plugins, options and key mappings.
 
@@ -71,9 +75,9 @@ astro
 
 ## Configuration overview
 
-The configuration is based on the AstroNvim v6 template config.  Changes to existing file have been kept to a minimum, except for `lua/community.lua` which has additional plugins from the AstroNvim Community repository.
+The configuration is based on the AstroNvim v6 template config. Changes to existing file have been kept to a minimum, except for `lua/community.lua` which has additional plugins from the AstroNvim Community repository.
 
-`lua/plugins/practicalli.lua` contains Practicalli specific configuration (plugins, preferences & key maps).  This also provides an example of how to modify and extend the AstroNvim configuration yourself.
+`lua/plugins/practicalli.lua` contains Practicalli specific configuration (plugins, preferences & key maps). This also provides an example of how to modify and extend the AstroNvim configuration yourself.
 
 
 To skip the Practicalli config without changing the configuration, set an environment variable called `PRACTICALLI_ASTRO` to false.
