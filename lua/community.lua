@@ -86,7 +86,7 @@ return {
   -- Source Control
 
   -- Diffview with neogit integration
-  { import = "astrocommunity.git.diffview-nvim" },
+  { import = "astrocommunity.git.diffview-plus-nvim" },
 
   -- Manage GitHub Gists
   { import = "astrocommunity.git.gist-nvim" },

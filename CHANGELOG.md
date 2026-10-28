@@ -9,6 +9,7 @@
 ## Changed
 
 - ci(github): 👷 use practicalli zensical custom megalinter flavor
+- feat(community): 🔧 switch to `"astrocommunity.git.diffview-plus-nvim"`
 
 
 # 2026-08-05
