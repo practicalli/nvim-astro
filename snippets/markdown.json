@@ -77,9 +77,9 @@
     "description": "Zensical link mastodon icon"
   },
   "zensical icon wikipedia-w": {
-    "prefix": "zensical-icon-mastodon",
+    "prefix": "zensical-icon-wikipedia-w",
     "body": [
-      ":fontawesome-brands-mastodon:$0"
+      ":fontawesome-brands-wikipedia-w:$0"
     ],
     "description": "Zensical link mastodon icon"
   },
