@@ -1,108 +1,108 @@
 {
-  "mkdocs admonition warning": {
-    "prefix": "mkdocs-admonition-warning-draft",
+  "zensical admonition warning": {
+    "prefix": "zensical-admonition-warning-draft",
     "body": [
       "!!! WARNING \"Initial draft - feedback welcome\""
     ],
-    "description": "MkDocs Admonition Warning Draft"
+    "description": "Zensical Admonition Warning Draft"
   },
-  "mkdocs button tag": {
-    "prefix": "mkdocs-button",
+  "zensical button tag": {
+    "prefix": "zensical-button",
     "body": [
       "{.md-button} $0"
     ],
-    "description": "MkDocs Button tag"
+    "description": "Zensical Button tag"
   },
-  "mkdocs button target tag": {
-    "prefix": "mkdocs-button-target-tag",
+  "zensical button target tag": {
+    "prefix": "zensical-button-target-tag",
     "body": [
       "{target=_blank .md-button} $0"
     ],
-    "description": "MkDocs Button target blank tag"
+    "description": "Zensical Button target blank tag"
   },
-  "mkdocs button form": {
-    "prefix": "mkdocs-button-form",
+  "zensical button form": {
+    "prefix": "zensical-button-form",
     "body": [
       "[${1:linktext}](${2:URL}){target=_blank .md-button} $0"
     ],
-    "description": "MkDocs Button form"
+    "description": "Zensical Button form"
   },
-  "mkdocs link target blank tag": {
-    "prefix": "mkdocs-link-target-blank-tag",
+  "zensical link target blank tag": {
+    "prefix": "zensical-link-target-blank-tag",
     "body": [
       "{target=_blank} $0"
     ],
-    "description": "MkDocs Link target blank tag"
+    "description": "Zensical Link target blank tag"
   },
-  "mkdocs link form": {
-    "prefix": "mkdocs-link-form",
+  "zensical link form": {
+    "prefix": "zensical-link-form",
     "body": [
       "[${1:linktext}](${2:URL}){target=_blank .md-button} $0"
     ],
-    "description": "MkDocs Link form"
+    "description": "Zensical Link form"
   },
-  "mkdocs youtube embed": {
-    "prefix": "mkdocs-youtube-embed",
+  "zensical youtube embed": {
+    "prefix": "zensical-youtube-embed",
     "body": [
       "<p style=\"text-align:center\">\n  <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/${1:url-code}\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n</p> $0"
     ],
-    "description": "MkDocs YouTube Embed"
+    "description": "Zensical YouTube Embed"
   },
-  "mkdocs icon book": {
-    "prefix": "mkdocs-icon-book",
+  "zensical icon book": {
+    "prefix": "zensical-icon-book",
     "body": [
       ":fontawesome-solid-book-open:$0"
     ],
-    "description": "MkDocs link book icon"
+    "description": "Zensical link book icon"
   },
-  "mkdocs icon github": {
-    "prefix": "mkdocs-icon-github",
+  "zensical icon github": {
+    "prefix": "zensical-icon-github",
     "body": [
       ":fontawesome-brands-github:$0"
     ],
-    "description": "MkDocs link github icon"
+    "description": "Zensical link github icon"
   },
-  "mkdocs icon globe": {
-    "prefix": "mkdocs-icon-globe",
+  "zensical icon globe": {
+    "prefix": "zensical-icon-globe",
     "body": [
       ":globe_with_meridians:$0"
     ],
-    "description": "MkDocs link globe icon"
+    "description": "Zensical link globe icon"
   },
-  "mkdocs icon mastodon": {
-    "prefix": "mkdocs-icon-mastodon",
+  "zensical icon mastodon": {
+    "prefix": "zensical-icon-mastodon",
     "body": [
       ":fontawesome-brands-mastodon:$0"
     ],
-    "description": "MkDocs link mastodon icon"
+    "description": "Zensical link mastodon icon"
   },
   "mkdocs icon youtube": {
     "prefix": "mkdocs-icon-youtube",
     "body": [
       ":fontawesome-brands-youtube:$0"
     ],
-    "description": "MkDocs link youtube icon"
+    "description": "Zensical link youtube icon"
   },
-  "mkdocs image github base url": {
-    "prefix": "mkdocs-image-github-base-url",
+  "zensical image github base url": {
+    "prefix": "zensical-image-github-base-url",
     "body": [
       "https://raw.githubusercontent.com/practicalli/graphic-design/live/$0"
     ],
-    "description": "MkDocs image GitHub base URL"
+    "description": "Zensical image GitHub base URL"
   },
-  "mkdocs image form": {
-    "prefix": "mkdocs-image-form",
+  "zensical image form": {
+    "prefix": "zensical-image-form",
     "body": [
       "![${1:alternative-text}](${2:url}#only-dark#$3){align=left$4 loading=lazy style=\"height:150px;width:150px\"}$0"
     ],
-    "description": "MkDocs Image form"
+    "description": "Zensical Image form"
   },
-  "mkdocs image GitHub form": {
-    "prefix": "mkdocs-image-github-form",
+  "zensical image GitHub form": {
+    "prefix": "zensical-image-github-form",
     "body": [
       "![${1:alternative text}](https://raw.githubusercontent.com/practicalli/graphic-design/live/${2:URL}#only-dark$3){align=left$4 loading=lazy style=\"height:150px;width:150px\"}"
     ],
-    "description": "MkDocs Image GitHub form"
+    "description": "Zensical Image GitHub form"
   },
   "post header": {
     "prefix": "post-header",
@@ -174,15 +174,15 @@ Thank you.
     ],
     "description": "post-100daysofcode"
   },
-  "mkdocs key form": {
-    "prefix": "mkdocs-key-form",
+  "zensical key form": {
+    "prefix": "zensical-key-form",
     "body": [
       "++$0++"
     ],
-    "description": "MkDocs Key form"
+    "description": "Zensical Key form"
   },
-  "mkdocs code block embeded": {
-    "prefix": "mkdocs-code-embed",
+  "zensical code block embeded": {
+    "prefix": "zensical-code-embed",
     "body": [
       "!!! EXAMPLE \"${1:title}\"
     ```${2:title}
@@ -190,8 +190,8 @@ Thank you.
     ```"
     ]
   },
-  "mkdocs code block fourclojure": {
-    "prefix": "mkdocs-code-embed-4clojure",
+  "zensical code block fourclojure": {
+    "prefix": "zensical-code-embed-4clojure",
     "body": [
       "!!! EXAMPLE \"Design Journal - 4Clojure #${1:number}\"
     ```clojure
