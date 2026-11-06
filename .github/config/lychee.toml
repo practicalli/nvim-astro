@@ -26,7 +26,7 @@ exclude = ['^https://(www\.)?linkedin\.com',
            '^https://web\.archive\.org/web/']
 
 # Exclude these filesystem paths from getting checked.
-exclude_path = ["mkdocs.yml", "assets", "overrides", "includes", ".github", ".git"]
+exclude_path = ["zensical.yml", "assets", "overrides", "includes", ".github", ".git"]
 
 # Exclude all private IPs from checking.
 # Equivalent to setting `exclude_private`, `exclude_link_local`, and

@@ -12,6 +12,7 @@
 - ci(github): 👷 use practicalli zensical custom megalinter flavor
 - feat(community): 🔧 switch to `"astrocommunity.git.diffview-plus-nvim"`
 - refactor(snippets): ♻️ rename mkdocs name and prefix to zensical
+- ci(megalinter): 🔧 change lychee exclude patterns to include zensical config
 
 
 # 2026-08-05
