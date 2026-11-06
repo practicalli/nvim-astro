@@ -76,8 +76,15 @@
     ],
     "description": "Zensical link mastodon icon"
   },
-  "mkdocs icon youtube": {
-    "prefix": "mkdocs-icon-youtube",
+  "zensical icon wikipedia-w": {
+    "prefix": "zensical-icon-mastodon",
+    "body": [
+      ":fontawesome-brands-mastodon:$0"
+    ],
+    "description": "Zensical link mastodon icon"
+  },
+  "zensical icon youtube": {
+    "prefix": "zensical-icon-youtube",
     "body": [
       ":fontawesome-brands-youtube:$0"
     ],
